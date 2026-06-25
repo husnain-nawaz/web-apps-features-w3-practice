@@ -2,7 +2,7 @@ git init
 
 git add .
 
-git commit -m "Initial commit"
+git commit -m "Comments with new code update"
 
 git branch -M main
 

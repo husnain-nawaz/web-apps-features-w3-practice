@@ -389,11 +389,131 @@ import _App from './App.jsx'
 
 
 
+// function Car(myobj){ // passing more than one props in here
+//   return(
+//     <h2>I am a {myobj.brand} {myobj.color} {myobj.model} </h2>
+//   )
+// }
+// createRoot(document.getElementById('root')).render(
+//   <Car brand="Ford" model="Mustang" color="Red" />
+// )
 
 
-createRoot(document.getElementById('root')).render(
-  <Car brand="Ford" />
-)
+// function Car(props){
+//   return(
+//     <h2>I am a {props.brand} {props.color} {props.model} </h2>
+//   )
+// }
+// let x = "Ford";
+// createRoot(document.getElementById('root')).render(
+//   <Car brand="Ford" model={x} color={1996} />
+// )
+
+
+
+// function Car(props){
+//   return(
+//     <>
+//       <h2>My car is {props.carinfo.name} {props.carinfo.model}  </h2>
+//       <h2>My car is {props.years[0]} {props.years[2]}  </h2>
+//     </>
+//  )
+// }
+// let x = [1964, 1965, 1966];
+// let y = {name: "Ford", model: "Mustang"};
+// createRoot(document.getElementById('root')).render(
+//   <Car years={x} carinfo={y} />
+// );
+
+
+
+// function Car(props){
+//   return (
+//     <>
+//     <h2>My {props.carInfo.name}{props.carInfo.model}{props.carInfo.color}{props.carInfo.year} </h2>
+//     </>
+//   )
+// }
+// const carInformation = {
+//   name: "Ford",
+//   model: "Mushtang",
+//   color : "red",
+//   year: 1988,
+// }
+// createRoot(document.getElementById('root')).render(
+//   <Car carInfo={carInformation} />
+// )
+
+
+
+
+// function Car(props){
+//   return(
+//     <h2>My car is {props.carinfo[0]} {props.carinfo[1]} </h2>
+//   )
+// }
+// const carinformation = ["Ford","Toyota","camery"]
+// createRoot(document.getElementById('root')).render(
+//   <Car carinfo = {carinformation} />
+// )
+
+
+
+// function Car(props){
+//   return (
+//     <h2>I am a {props.brand} </h2>
+//   )
+// }
+// function Garage(){
+//   return (
+//     //  only read han in ko chnag enahi kr askaty in ki valies ko 
+//     <>
+//       <h1>Garage second</h1>
+//       <Car brand="Ford" /> 
+//     </>
+//   )
+// }
+// createRoot(document.getElementById('root')).render(
+//   <Garage />
+// )
+
+
+
+// function Car(props){
+//   const {brand,model} = props;
+//   return(
+//     <h2>I love my {brand} {model} </h2>
+//   )
+// }
+// createRoot(document.getElementById('root')).render(
+//   <Car brand="Ford" model="camrey" />
+// )
+
+
+
+// function Car({color, brand, ...rest}){
+//   return(
+//     <h2>My {brand} {rest.year} {rest.model} is {color} </h2>
+//   )
+// }
+// createRoot(document.getElementById('root')).render(
+//   <Car brand="Ford" model="camrey" color="blue" year={1988} />
+// )
+
+
+
+// function Car({color = "yellow", brand}){
+//   return(
+//     <h2>My {color} {brand} </h2>
+//   )
+// }
+// createRoot(document.getElementById('root')).render(
+//   <Car brand="Ford" model="camrey" color="blue" year={1988} />
+// )
+
+
+
+
 
 
 
