@@ -517,6 +517,167 @@ import _App from './App.jsx'
 
 
 
+// function Son(props){
+//   return (
+//     <div style={{background:'yellow'}}>
+//       <h1>Son</h1>
+//       <div>{props.children}</div>
+//     </div>
+//   )
+// }
+// function Daughter(props){
+//   // const {brand,model} = props;
+//   return(
+//     <div style={{background:"green"}}>
+//       <h1>Daughter</h1>
+//       <div>{props.children}</div>
+//     </div>
+//   )
+// }
+// function Parent(){
+//   return(
+//     <div>
+//       <h1>Parent ha ya</h1>
+//       <Son>
+//         <p>y ason ha parent ma</p>
+//       </Son>
+//       <Daughter>
+//         <p>
+//           ya  daughter ha parent ma
+//         </p>
+//       </Daughter>
+//     </div>
+//   )
+// }
+// createRoot(document.getElementById('root')).render(
+//   <Parent />
+// );
+
+
+
+
+// function  Football(){
+//     const shoot = ()=>{
+//         alert("Great shoot");
+//     }
+//     return(
+//         <button onClick={shoot}>Click it</button>
+//     )
+// }
+// createRoot(document.getElementById('root')).render(
+//   <Football />
+// );
+
+
+
+// function Football(){
+//     const shoot = (a)=>{
+//         alert(a)
+//     }
+//     return(
+//         <button onClick={()=>shoot("Goal")}>Take a shoot</button>
+//     )
+// }
+// createRoot(document.getElementById('root')).render(
+//   <Football />
+// );
+
+
+
+
+// function Football(){
+//     // a ma goal a rha ha or event ma b 
+//     const shoot = (a,b)=>{ 
+//         alert(b.type)
+//         alert(a)
+//     }
+//     return(
+//         <button onClick={(event)=>shoot("Goal",event)}>Take shot</button>
+//     )
+// }
+// createRoot(document.getElementById('root')).render(
+//   <Football />
+// );
+
+
+
+// function MissedGoal(){
+//     return <h1>Missed</h1>
+// }
+// function MadeGoal(){
+//     return <h1>Goal</h1>
+// }
+// function Goal(props){
+//     const isGoal = props.isGoal;
+//     if(isGoal){
+//         return <MadeGoal />
+//     }
+//     return <MissedGoal />
+// }
+// createRoot(document.getElementById('root')).render(
+//     <Goal isGoal={true} />
+// )
+
+
+
+// function Car(props){
+//     return(
+//         <>
+//         {props.brand && <h1>value is: {props.brand}</h1> }
+//         </>
+//     )
+// }
+// createRoot(document.getElementById('root')).render(
+//     <Car brand={"husnian"} />
+// )
+
+// // ternRY operator condition ? true : false;
+
+
+
+// function MissedGoal(){
+//     return <h1>Missed</h1>
+// }
+// function MadeGoal(){
+//     return <h1>Made Goal</h1>
+// }
+// function Goal(props){
+//     return(
+//         <>
+//             {props.isGoal ? <MadeGoal /> : <MissedGoal />}
+//         </>
+//     )
+// }
+// createRoot(document.getElementById('root')).render(
+//     <Goal isGoal={false} />
+// )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
