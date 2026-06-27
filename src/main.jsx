@@ -654,7 +654,221 @@ import _App from './App.jsx'
 
 
 
+// function MyCars(){
+//     const cars = ['Ford','BMW','Audi'];
+//     return(
+//         <>
+//             <h1>My Cars:</h1>
+//             <ul>
+//                 {cars.map((a)=>
+//                     <li>
+//                         {a}
+//                     </li>
+//                 )}
+//             </ul>
+//         </>
+//     )
+// }
+// createRoot(document.getElementById('root')).render(
+//     <MyCars />
+// )
 
+
+
+// function MyCars(){
+//     const cars = [
+//         {id:101, brand: "Ford"},
+//         {id:102, brand: "Toyota"},
+//         {id:103, brand: "Audi"}
+//     ];
+//     return(
+//         <>
+//             <h1>My Cars</h1>
+//             <ul>
+//                 {cars.map((a)=>
+//                     <li key={a.id}>
+//                         {a.brand}
+//                     </li>
+//                 )}
+//             </ul>
+//         </>
+//     )
+// }
+// createRoot(document.getElementById('root')).render(
+//   <MyCars />
+// );
+
+
+
+
+// function MyCars(){
+//     const cars = ['Ford','BMW','Audi'];
+//     return(
+//         <>
+//             {cars.map((value,index)=>
+//                 <li key={index}>
+//                    {index} {value}
+//                 </li>
+//             )}
+//         </>
+//     )
+// }
+// createRoot(document.getElementById('root')).render(
+//   <MyCars />
+// );
+
+
+
+
+// function Myform(){
+//     return(
+//         <form>
+//             <label>
+//                 My Name:
+//                 <input type="text" className='border p-4 border-solid border-yellow-500' />
+//             </label>
+//         </form>
+//     )
+// }
+// createRoot(document.getElementById('root')).render(
+//   <Myform />
+// );
+
+
+
+
+// function MyForm(){
+//     const [name, Setname] = useState("Husnain Chodhary");
+//     function handleChange(e){
+//         e.target.value;
+//     }
+//     return(
+//         <form>
+//             <label>
+//                 Enter your Name:
+//                 <input type="text" value={name} onChange={handleChange} />
+//             </label>
+//             <p>Current Value is: {name} </p>
+//         </form>
+//     )
+// }
+// createRoot(document.getElementById('root')).render(
+//     <MyForm />
+// )
+
+
+
+
+
+// function MyForm(){
+//     const [name, setname] = useState("")
+//     function handlesubmit(){
+//         alert(name)
+//     }
+//     function handleChange(e){
+//         setname(e.target.value);
+//     }
+//     return(
+//         <form onSubmit={handlesubmit}>
+//             <label>
+//                 Enter Your Name:
+//                 <input className='border' type="text" value={name} onChange={handleChange} />
+//             </label>
+//             <input type="Submit" />
+//         </form>
+//     )
+// }
+// createRoot(document.getElementById('root')).render(
+//     <MyForm />
+// )
+
+
+
+// function MyForm(){
+//     const [name, setname] = useState("")
+//     function handlesubmit(){
+//         alert(name)
+//     }
+//     function handleChange(e){
+//         setname(e.target.value);
+//     }
+//     return(
+//         <form onSubmit={handlesubmit}>
+//             <label>
+//                 Enter Your Name:
+//                 <textarea className='border' type="text" value={name} onChange={handleChange} />
+//             </label>
+//             <p>value: {name} </p>
+//             <input type="Submit" />
+//         </form>
+//     )
+// }
+// createRoot(document.getElementById('root')).render(
+//     <MyForm />
+// )
+
+
+
+
+
+// function MyForm(){
+//     const [name, setname] = useState("Toyota")
+//     function handlesubmit(){
+//         alert(name)
+//     }
+//     const handleChange = (e)=>{
+//         setname(e.target.value);
+//     }
+//     return(
+//         <form onSubmit={handlesubmit}>
+//             <label>
+//                 Enter:
+//                 <select value={name} onChange={handleChange}>
+//                     <option value="Ford">ford</option>
+//                     <option value="Toyota">toyota</option>
+//                     <option value="nissaa">Nissan</option>
+//                 </select>
+//             </label>
+//             <p>value: {name} </p>
+//             <input type="Submit" />
+//         </form>
+//     )
+// }
+// createRoot(document.getElementById('root')).render(
+//     <MyForm />
+// )
+
+
+
+
+// function MyForm(){
+//     const [names, setname] = useState({
+//         firstname : "John",
+//         lastname : "ali"
+//     })
+//     function handlesubmit(){
+//         alert(name)
+//     }
+//     const handleChange = (e)=>{
+//         const name = e.target.name;
+//         const value = e.target.value;
+//         setname(a=>({...a,[name]: value}))
+//     }
+//     function handlesubmit(){
+//         alert(names.firstname+" "+names.lastname)
+//     }
+//     return(
+//         <form onSubmit={handlesubmit}>
+//             <input className='border' type="text" name='firstname' value={names.firstname} onChange={handleChange} />     
+//             <input className='border' type="text" name='lastname' value={names.lastname} onChange={handleChange} />     
+//             <p>values: {names.firstname} {names.lastname} </p>
+//             <input type="Submit" />
+//         </form>
+//     )
+// }
+// createRoot(document.getElementById('root')).render(
+//     <MyForm />
+// )
 
 
 
