@@ -872,6 +872,168 @@ import _App from './App.jsx'
 
 
 
+// function Myform(){
+//     const [inputs, setInputs] = useState({
+//         firstname: "Ch ",
+//         tomato : true,
+//         banana : false,
+//         onion : false,
+//     });
+//     const handleChange = (e)=>{
+//         const name = e.target.name;
+//         const value = e.target.type === "checkbox" ? e.target.checked : e.target.value;
+//         setInputs(a=>({...a, [name]: value}))
+//     }
+//     const handlesubmit = (e)=>{
+//         let filling  = '';
+//         if(inputs.tomato) filling += 'tomato';
+//         if(inputs.onion){
+//             if(inputs.tomato) filling += ' and ';
+//             filling += 'onion';
+//         }
+//         if(inputs.banana){
+//             if(inputs.tomato) filling += " , ";
+//             if(inputs.onion) filling += " and ";
+//             filling += 'Banana';
+//         }
+//         if(filling === "") filling = " No Filling";
+//         alert(` ${inputs.firstname} wants burger with ${filling}  `)
+//     }
+
+//     return(
+//         <form onSubmit={handlesubmit}>
+//             <label>
+//                 My Name is:
+//                 <input className='border' type="text" name="firstname" value={inputs.firstname} onChange={handleChange} />
+//             </label>
+//             <br />
+//             <label>Tomato:
+//                 <input type="checkbox" name='tomato' checked={inputs.tomato} onChange={handleChange} />
+//             </label>
+//             <label>Onion
+//                 <input type="checkbox" name='onion' checked={inputs.onion}  onChange={handleChange} />
+//             </label>
+//             <label>
+//                 Banana 
+//                 <input type="checkbox" name="banana" checked={inputs.banana} onChange={handleChange} />
+//             </label>
+//             <br />
+//             <button className="px-4 py-2 bg-indigo-600 text-white font-medium rounded-md hover:bg-indigo-700 transition duration-200">Submit</button>
+//         </form>
+//     )
+// }
+// createRoot(document.getElementById('root')).render(
+//     <Myform />
+// )
+
+
+
+
+
+// function A(){
+//     return(
+//         <button class="px-4 py-2 bg-indigo-600 text-white rounded-md 
+//                hover:bg-indigo-700 
+//                focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2
+//                active:bg-indigo-800 
+//                disabled:opacity-50 disabled:cursor-not-allowed transition">
+//   Interactive Button
+// </button>
+//     )
+// }
+// createRoot(document.getElementById('root')).render(
+//     <A />
+// )
+
+
+
+
+// function MyForm(){
+//     const [selectedfruit, Setselectedfruit] = useState("");
+//     const handleChange = (e)=>{
+//         Setselectedfruit(e.target.value)
+//     }
+//     const handlesubmit = (e)=>{
+//         alert(`Your Fruit is: ${selectedfruit} `)
+//     }
+//     return (
+//         <form onSubmit={handlesubmit}>
+//         <label>
+//             <input type="radio" name='fruit' value='apple' checked={selectedfruit==='apple'} onChange={handleChange} />
+//             Apple
+//         </label>
+//         <br />
+//         <label>
+//             <input type="radio" name='fruit' value='banana' checked={selectedfruit==='banana'} onChange={handleChange} />
+//             Banana
+//         </label>
+//         <br />
+//         <label>
+//             <input type="radio" name="fruit" value='cherry' checked={selectedfruit==='cherry'} onChange={handleChange} />
+//             Cherry
+//         </label>
+//         <br />
+//         <button className='bg-blue-600 text-white px-4 py-2'>Submit</button>
+//         </form>        
+//     )
+// }
+// createRoot(document.getElementById('root')).render(
+//     <MyForm />
+// )
+
+
+
+// function Modal({isopen, onclose, children}){
+//     if(!isopen) return null;
+//     return createPortal(
+//         <div className='fixed inset-0 bg-black/50 flex items-center justify-center'>
+//             <p>{children}</p>
+//             <br />
+//             <button onClick={onclose} className='bg-blue-600 text-white px-4 py-2'>Close</button>
+//         </div>,      
+//         document.body
+//     )
+// }
+// function MyAPP(){
+//     const [isopen, setisopen] = useState(false);
+//     return(
+//         <div>
+//             <button onClick={()=>setisopen(true)}>Open Modal</button>
+//             <Modal isopen={isopen} onclose={()=> setisopen(false)}>
+//                 <h2 className='bg-white p-5 rounded-lg'>MOdel content MOdel content MOdel content MOdel content</h2>
+//             </Modal>
+//         </div>
+//     )
+// }
+// createRoot(document.getElementById('root')).render(
+//     <MyAPP />
+// )
+
+
+
+function PortalButton({clickkro, children}){
+return createPortal(
+    <button onClick={clickkro} className='fixed bottom-5 right-5 p-2.5 bg-blue-600 text-white'>{children}</button>,
+    document.body
+)}
+function MyAPP(){
+    const [count1, setcount1] = useState(0);
+    const [count2, setCount2] = useState(0);
+    return(
+    <div onClick={()=>{setcount1(c=>c+1)}}>
+        <h2>Div Clicked: {count1} </h2>
+        <h2>Button Clicked: {count2} </h2>
+        <PortalButton clickkro={()=>{setCount2(c=>c+1)}}>
+            Button
+        </PortalButton>
+    </div>    
+)}
+createRoot(document.getElementById('root')).render(
+    <MyAPP />
+)
+
+
+
 
 
 
