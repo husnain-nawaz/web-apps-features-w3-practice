@@ -1088,10 +1088,29 @@ import _App from './App.jsx'
 
 
 
-
-
-
-
+// import Header from './header.jsx';
+// import Sidebar from './sidebar.jsx';
+// import Content from './content.jsx';
+// //  ----------------Website--------------------
+// const Header = lazy(()=> import('./header.jsx'))
+// const Content = lazy(()=> import('./content.jsx'))
+// const Sidebar = lazy(()=> import("./sidebar.jsx"))
+// function APP(){
+//     return (
+//         <div>
+//             <Suspense fallback={<div className='bg-amber-300'>Loading....</div>}>
+//                 <Header />
+//                 <div className='flex'>
+//                     <Sidebar />
+//                     <Content />
+//                 </div>
+//             </Suspense>
+//         </div>
+//     )
+// }
+// createRoot(document.getElementById('root')).render(
+//     <APP />
+// )
 
 
 
