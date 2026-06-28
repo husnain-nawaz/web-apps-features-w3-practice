@@ -1,4 +1,4 @@
-import React, { StrictMode, useState } from 'react'
+import React, { StrictMode, useState, Suspense, lazy } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createPortal } from 'react-dom';
 
@@ -1011,26 +1011,91 @@ import _App from './App.jsx'
 
 
 
-function PortalButton({clickkro, children}){
-return createPortal(
-    <button onClick={clickkro} className='fixed bottom-5 right-5 p-2.5 bg-blue-600 text-white'>{children}</button>,
-    document.body
-)}
-function MyAPP(){
-    const [count1, setcount1] = useState(0);
-    const [count2, setCount2] = useState(0);
-    return(
-    <div onClick={()=>{setcount1(c=>c+1)}}>
-        <h2>Div Clicked: {count1} </h2>
-        <h2>Button Clicked: {count2} </h2>
-        <PortalButton clickkro={()=>{setCount2(c=>c+1)}}>
-            Button
-        </PortalButton>
-    </div>    
-)}
-createRoot(document.getElementById('root')).render(
-    <MyAPP />
-)
+// function PortalButton({clickkro, children}){
+// return createPortal(
+//     <button onClick={clickkro} className='fixed bottom-5 right-5 p-2.5 bg-blue-600 text-white'>{children}</button>,
+//     document.body
+// )}
+// function MyAPP(){
+//     const [count1, setcount1] = useState(0);
+//     const [count2, setCount2] = useState(0);
+//     return(
+//     <div onClick={()=>{setcount1(c=>c+1)}}>
+//         <h2>Div Clicked: {count1} </h2>
+//         <h2>Button Clicked: {count2} </h2>
+//         <PortalButton clickkro={()=>{setCount2(c=>c+1)}}>
+//             Button
+//         </PortalButton>
+//     </div>    
+// )}
+// createRoot(document.getElementById('root')).render(
+//     <MyAPP />
+// )
+
+
+
+// import MyFruits from './fruits.jsx';
+// function App(){
+//     return(
+//         <div>
+//             <Suspense fallback={<div>Loading....</div>}>
+//                 <MyFruits />
+//             </Suspense>
+//         </div>
+//     )
+// }
+// createRoot(document.getElementById('root')).render(
+//   <App />
+// );
+
+
+
+// import MyCars from './Cars.jsx';
+// function App(){
+//     return(
+//         <div>
+//             <Suspense fallback={<div>Loading.....</div>}>
+//                 <MyCars />
+//             </Suspense>
+//         </div>
+//     )
+// }
+// createRoot(document.getElementById('root')).render(
+//   <App />
+// );
+
+
+
+
+
+// import MyCars from './Cars.jsx'; // ya simple ha is ma lazy load nahi chalta
+// const MyCars = lazy(()=> import('./Cars.jsx'))
+// function App(){
+//     return(
+//         <div>
+//             <Suspense fallback={<div>Loading.....</div>}>
+//                 <MyCars />
+//             </Suspense>
+//         </div>
+//     )
+// }
+// createRoot(document.getElementById('root')).render(
+//   <App />
+// );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
