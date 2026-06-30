@@ -4,6 +4,7 @@ import { createPortal } from 'react-dom';
 
 import './index.css'
 import _App from './App.jsx'
+import styled from 'styled-components';
 
 // createRoot(document.getElementById('root')).render(
 //   <StrictMode>
@@ -1087,7 +1088,6 @@ import _App from './App.jsx'
 
 
 
-
 // import Header from './header.jsx';
 // import Sidebar from './sidebar.jsx';
 // import Content from './content.jsx';
@@ -1112,6 +1112,200 @@ import _App from './App.jsx'
 //     <APP />
 // )
 
+
+// // import './mystylesheet.css';
+// import styles from './my-style.module.css'
+
+// const Car = ()=>{
+//     return <h1 className={styles.bigred}>Hello car</h1>
+// }
+
+// // const Header = ()=>{
+// //     const mystyle = {
+// //         color: "White",
+// //         backgroundColor: "DodgerBlue",
+// //         padding: "10px",
+// //         fontFamily: "sans-Serif",
+// //     }
+// //     return (
+// //         <>
+// //             <h1 style={{color:"red"}}>Hello Husnain</h1>
+// //             <p style={{backgroundColor:"yellow"}}>ADDed style</p>
+// //             <h1 style={mystyle}>Hello Style</h1>
+// //         </>
+// //     )
+// // }
+// createRoot(document.getElementById('root')).render(
+// //   <Header />
+//     <Car />
+// );
+
+
+
+
+// import styles from './Button.module.css'
+// function App(){
+//     return(
+//         <div>
+//             <button className={`${styles.mybutton} ${styles.primary}`}>Primary</button>
+//             <button className={`${styles.mybutton} ${styles.secondary}`}>SEcondary</button>
+//             <button className={styles.mybutton}>Button</button>
+//         </div>
+//     )
+// }
+// createRoot(document.getElementById('root')).render(
+//     <App />
+// )
+
+
+
+
+// import styles from './buttoncompose.module.css'
+// function App(){
+//     return(
+//         <div>
+//             <button className={styles.primary}>Primary</button>
+//             <button className={styles.secondary}>SEcondary</button>
+//         </div>
+//     )
+// }
+// createRoot(document.getElementById('root')).render(
+//     <App />
+// )
+
+
+
+
+
+// import styles from './globalheader.module.css'
+// function App(){
+//     return(
+//         <div>
+//             <h1 className='myheader'>header</h1>
+//         </div>
+//     )
+// }
+// createRoot(document.getElementById('root')).render(
+//     <App />
+// )
+
+
+
+
+// import styles from "./mystyles.module.css"
+// function App(){
+//     return(
+//         <div>
+//             <h1 className='myheader'>My Header</h1>
+//             <p className={styles.myparagraph}>My paragraph</p>
+//         </div>
+//     )
+// }
+// createRoot(document.getElementById('root')).render(
+//     <App />
+// )
+
+
+
+
+// import { styled } from 'styled-components';
+// const MyHeader = styled.h1`
+//     padding: 10px 20px;
+//     background-color: #007bff;
+//     color: white;
+// `;
+// function App(){
+//     return(
+//         <>
+//             <MyHeader>Welcome!</MyHeader>
+//         </>
+//     )
+// }
+// createRoot(document.getElementById('root')).render(
+//     <App />
+// )
+
+
+
+
+// const Button = styled.button`
+//   padding: 10px 20px;
+//   border: none;
+//   border-radius: 4px;
+//   background-color: ${props => props.btntype === 'primary' ? '#007bff' : 'yellow'};
+//   color: white;
+//   cursor: pointer;
+// `;
+// function App(){
+//     return(
+//         <div>
+//             <Button btntype='primary'>Primary Button</Button>
+//             <br />
+//             <Button>SEcondary Button</Button>
+//         </div>
+//     )
+// }
+// createRoot(document.getElementById('root')).render(
+//     <App />
+// )
+
+
+
+// const Button = styled.button`
+//   padding: 10px 20px;
+//   border: none;
+//   border-radius: 4px;
+//   color: white;
+//   cursor: pointer;
+// `;
+// const PrimaryButton = styled(Button)`
+//     background-color: #007bff;
+// `;
+// const SuccessButton = styled(Button)`
+//     background-color: #28a745;
+// `;
+// function App(){
+//     return(
+//         <div>
+//             <PrimaryButton>Primary</PrimaryButton>
+//             <SuccessButton>Success</SuccessButton>
+//         </div>
+//     )
+// }
+// createRoot(document.getElementById('root')).render(
+//     <App />
+// )
+
+
+
+
+// import { createGlobalStyle } from 'styled-components';
+// const GlobalStyle = createGlobalStyle`
+//   h1 {
+//     color: white;
+//     background-color: purple;
+//     font-family: Arial, sans-serif;
+//   }
+
+//   .myparagraph {
+//     font-family: courier, monospace;
+//     color: blue;
+//   }
+// `;
+// function App() {
+//   return (
+//     <>
+//       <GlobalStyle />
+//       <h1>Welcome!</h1>
+//       <p className="myparagraph">This paragraph is styled with global styles.</p>
+//     </>
+//   );
+// }
+// createRoot(document.getElementById('root')).render(
+//   <App />
+// );
+
+                   
 
 
 

@@ -1,0 +1,21 @@
+
+.mybutton{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.primary {
+    composes: mybutton;
+    background-color: chartreuse;
+    color: white;
+}
+.secondary{
+    composes: mybutton;
+    background-color: aqua;
+    color: aliceblue;
+}
+
+
