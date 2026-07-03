@@ -3,14 +3,39 @@ import { createRoot } from 'react-dom/client'
 import { createPortal } from 'react-dom';
 
 import './index.css'
-import _App from './App.jsx'
+// import App from './App.jsx'
 import styled from 'styled-components';
 
 // createRoot(document.getElementById('root')).render(
 //   <StrictMode>
-//     <_App />
+//     <App />
 //   </StrictMode>,
 // )
+
+
+import App from './localstorage-Table-app.jsx';
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
